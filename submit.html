@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assignmenter</title>
+  <!--font Awesome-->
+  <script src="https://kit.fontawesome.com/1dda49b03e.js" crossorigin="anonymous"></script>
+  <!--bootstrap scripts--->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <!---google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/submit.css">
+</head>
+
+<body>
+
+  <section id="title">
+
+<div class="container-fluid" style="padding-top: 2%;">
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-bg-light">
+        <a class="navbar-brand" href="index.html">Assignmenter</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="submit.html">Submit Assignment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    </section>  
+      <section class="mainContent" id="mainContent">
+        <div class="container">
+            <form action="https://api.web3forms.com/submit" method="POST" id="assignmentForm">
+            <h2>Fill Details of Assignment</h2>
+           
+                <input type="hidden" name="access_key" value="6f6d7ad0-face-4223-9d58-9f57d1ba9df9">
+                <div class="form-group">
+                    <label for="Email">Email</label>
+                    <input type="email" id="Email" name="Email" placeholder="Enter email for communication" required>
+                </div>
+                <div class="form-group">
+                    <label for="Phone_No">Phone Number</label>
+                    <input type="tel" id="Phone_No" name="Phone_No" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <label for="Subject_Name">Subject/Course code</label>
+                    <input type="text" id="Subject_Name" name="Subject_Name" placeholder="Enter Subject Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="Pages">Pages</label>
+                    <input type="number" id="Pages" name="Pages" min="1" max="9999" value="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="Due_Date">Deadline</label>
+                    <input type="date" id="Due_Date" name="Due_Date" required>
+                </div>
+                <div class="form-group">
+                    <label for="Due_Time">Deadline Time</label>
+                    <select id="Due_Time" name="Due_Time" required>
+                        <option value="2:00 AM">2:00 AM</option>
+                        <option value="4:00 AM">4:00 AM</option>
+                        <!-- Add other options as needed -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Details">Description</label>
+                    <textarea id="Details" name="Details" placeholder="Write assignment description" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="Document">Upload Document</label>
+                    <input type="file" id="Document" name="Document" accept=".pdf, .doc, .docx">
+                </div>                
+                <div class="form-group checkbox-label">
+                    <input type="checkbox" id="customCheck" name="is_sendy" value="1" checked required>
+                    <label for="customCheck">I accept the T & C and other policies of the website and agree to receive offers and updates.</label>
+                </div>
+                <button type="submit" class="btn btn-green btn-l mt-4">Submit assignment</button>
+            </form>
+        </div>
+    </section>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    
+
+      <div class="social">
+        <span style="padding: 0 0.5%;"><i class="fa-brands fa-facebook"></i></span> <span style="padding: 0 0.5%;"><i class="fa-brands fa-instagram"></i></span> <span style="padding: 0 0.5%;"><i class="fa-brands fa-twitter"></i></span> <span style="padding: 0 0.5%;"><i class="fa-solid fa-envelope"></i></span>
+      </div>
+     <!-- Footer -->
+   
+     <footer id="footer">
+   
+       <p>© Copyright Assignmenter</p>
+   
+     </footer>
+   
+   
+   </body>
+   
+   </html>
+   
